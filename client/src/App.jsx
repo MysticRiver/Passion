@@ -1,5 +1,8 @@
 import {Route, Routes} from 'react-router-dom'
-
+import HomePage from './pages/HomePage'
+import AuthPage from './pages/AuthPage'
+import ProfilePage from './pages/ProfilePage'
+import MessagePage from './pages/MessagePage'
 function App() {
   
 
@@ -10,7 +13,7 @@ function App() {
 				<Route path='/' element={<HomePage />} />
         <Route path='/auth' element={<AuthPage />} />
 				<Route path='/profile' element={<ProfilePage />} />
-				<Route path='/chat/:id' element={<MessagePage />} />
+        <Route path='/chat/:id' element={<MessagePage />} />
 			</Routes>
     </div>
      
@@ -18,4 +21,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
